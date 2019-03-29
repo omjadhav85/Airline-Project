@@ -1,0 +1,143 @@
+<style>
+table {
+  width: 100%;
+}
+
+th{
+  height: 50px;
+  text-align:center;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 15px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  text-align:center;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 15px;
+  text-align: left;
+
+}
+tr:hover {background-color: #f5f5f5;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+  body{
+    background: url("images/plane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .wrapper{
+    margin: 0 auto;
+    width: 350px; padding: 20px;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    //background-image: url("images/cssback.png");
+
+  }
+  p{
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+
+  input[type=text],[type=number],[type=email],[type=date],[type = password],select{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+
+</style>
+
+
+</head>
+<body>
+
+  <ul>
+    <li><a href="logout.php">Logout</a></li>
+    <li><a href="welcome.php">Home</a></li>
+    <li><a  href="addflight.html">Add Flight</a></li>
+    <li><a href="deleteflight.html">Delete Flight</a></li>
+    <li><a href="updateflight.html">Update Flight</a></li>
+    <li><a  class="active" href="cancelbooking.html">Cancel Booking</a></li>
+    <li style="float: left; color:white;font-family: sans-serif;font-size: 35px;">IndiGo</li>
+  </ul>
+
+
+  <div class="wrapper">
+    <form action="cancelbooking.php" method="post">
+
+      Booking Id:  <input type="number" name="id" required></input><br><br>
+      <input type="submit" value="Cancel Booking"></input>
+
+
+
+    </form>
+  </div>
+
+
+</body>
+</html>

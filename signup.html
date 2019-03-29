@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+  body{
+    background: url("images/plane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .wrapper{
+    margin: 0 auto;
+    width: 350px; padding: 20px;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    //background-image: url("images/cssback.png");
+
+  }
+
+  input[type=text],[type=number],[type=email],[type=date],[type = password],select{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+
+</style>
+
+
+</head>
+<body>
+
+  <ul>
+    <li><a href="website.php">Home</a></li>
+    <li><a class="active" href="signup.html">Sign Up</a></li>
+    <li><a href="admin.html">Admin</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li style="float: left; color:white;font-family: sans-serif;font-size: 35px;">IndiGo</li>
+  </ul>
+
+  <div class="wrapper">
+    <h1 style="font-family:sans-serif;">Sign Up</h1><br>
+  <form action="signup_handle.php" method="post">
+
+    Username: <input type="text" name="username" required></input><br><br>
+    Password: <input type="password" name="password1" required></input><br><br>
+    Confirm Password: <input type="password" name="password2" required></input><br><br>
+
+    <input type="submit" value="Create"></input>
+
+
+  </form>
+</div>
+
+
+
+</body>
+</html>
